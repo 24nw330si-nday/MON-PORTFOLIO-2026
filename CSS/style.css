@@ -7,17 +7,19 @@
     --gris-tres-clair:#f8f8f8;
     --gris-clair:#eee;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: var(--gris-tres-clair);
     font-family: Roboto, sans-serif;
     line-height:1.6 ;
-
 }
+
 header{
     background-color: white;
     box-shadow: 2px 6px 10px rgba( 0, 0, 0, 0.05);
@@ -28,8 +30,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 2rem 3rem;
-
 }
+
 header div a {
     text-decoration: none;
     font-size: 2.2rem;
@@ -39,7 +41,7 @@ header div a {
 
 ul li {
     list-style-type: none;
-    margin-left: 25px;/*espacement de texte avec decalement vers la gauche*/
+    margin-left: 25px;
 }
 
 ul{
@@ -53,15 +55,11 @@ ul li a {
     font-size: 1.1rem;
     position: relative;
     padding: 10px 0;
-
 }
 
 ul li a:hover {
     color: var(--violet-doux);
-
 }
-
-/*creation de la barre de soulignement*/
 
 ul li a::after{
     content:'';
@@ -69,24 +67,68 @@ ul li a::after{
     left:0;
     bottom:0;
     height: 3px;
-    width: 0%;/*largeur avant transition taille de depart sans quoi   0 transition*/
+    width: 0%;
     background-color:var(--violet-doux);
-    transition: width 0.3s ease;/*animation de la barrre de soulignement lors du hovering*/
-
+    transition: width 0.3s ease;
 }
 
-/*la barre de soulignement qu'on vient de creer apparait maintenant chaque fois qu'il est survolé par la souris */
 ul li a:hover::after{
-    width: 100%;/*largeur apres transition , taille finale*/
+    width: 100%;
 }
 
-/*clicker le lien acceuil par defaut*/
 a.active {
     color: var(--violet-doux);
-
 }
 
 a.active::after{
     width: 100%;
-    
+}
+
+.hero{
+    display: flex;
+    justify-content: center;/*---marche de paire avec display:flex---*/
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    margin: 10rem 2rem;
+}
+
+.hero img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--violet-doux);
+}
+
+.hero h1 {
+    color: var(--violet-fonce);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.hero p {
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.hero a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    margin-top: 1rems;
+    transition: background-color 0.3s ease, transform 0.2s ease ;
+}
+
+.hero a:hover {
+    background-color: var(--violet-fonce);
+    transform: translate(-3px);
 }
