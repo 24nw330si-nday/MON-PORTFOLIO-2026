@@ -28,7 +28,7 @@ header{
     z-index: 100;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     padding: 2rem 3rem;
 }
 
@@ -159,10 +159,7 @@ section h2::after {
     border-radius: 2px;
 }
 
-.apropos p {
-   margin-bottom: 2rem; 
-   color: var(--gris-fonce);
-   font-size: 1.2rem;
+
 }
 
 .competences table {
@@ -222,7 +219,7 @@ footer p {
 }
 
 footer a {
-    display: inline-block;
+    display: inline-block; 
     font-size: 1.6rem;
     color: white;
     margin: 0 10px;
@@ -232,4 +229,26 @@ footer a {
 footer a:hover {
     color:var(--orange-vif);
     transform: translatey(-3px);
+}
+
+.realisation p {
+   margin-bottom: 2rem; 
+   color: var(--gris-fonce);
+   font-size: 1rem;
+}
+
+.realisation img {
+    height: 120px;
+}
+
+.realisation h4 {
+    color: var(--violet-fonce);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+
+}
+
+.realisation section {
+    
 }
