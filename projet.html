@@ -1,133 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="css/style.css"><!--lien css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--pour les logos x github et linkedin-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><!--cette ligne et les deux en bas sont pour la police roboto de google sur toute la page-->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Mon Portfolio - Mes Réalisations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Utilisation de la version stable 6.5.1 pour garantir l'affichage des icônes -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--pour les logos x github et linkedin-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
       <header>
         <div>
-            <a href="">Mon Portfolio</a>
+            <a href="index.html">Mon Portfolio</a>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Acceuil</a></li><!--si on met active sur passion c'est passion qui devient cliqué ,a.active s'applique sur lui-->
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="projet.html" class="active">Projet</a></li>
                 <li><a href="passion.html">Passion</a></li>
-                <li><a href="divertissement.html">Divertissemt</a></li>
-                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="divertissement.html">Divertissement</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
       </header>
+
    <main class="realisation">
     <section>
         <div>
             <h2>Mes réalisations</h2>
         </div>
     </section>
+
+    <!-- Projet 1 -->
     <section>
         <div>
             <img src="images/e-commerce.png" alt="site e-commerce">
         </div>
         <div>
-            <h4>SIte E-commerce</h4>
-            <p>Une boutique en ligne complète développé avec avec HTML, CSS et JavaScript pur</p>
-            <a href="">HTML</a>
-            <a href="">CSS</a>
-            <a href="">JS</a>
-            <a href=""><i class="fa-brands fa-github"></i></a> 
-            <h5>code</h5>
-            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <h5>demo</h5>
+            <h4>Site E-commerce</h4>
+            <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur</p>
+            <nav>
+                <ul>
+                    <a href="">HTML</a>
+                    <a href="">CSS</a>
+                    <a href="">JS</a>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <a href=""><i class="fa-brands fa-github"></i><h5>Code</h5></a>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i><h5>Démo</h5></a>
+                </ul>
+            </nav>
         </div>
     </section>
+
+    <!-- Projet 2 -->
     <section>
         <div>
             <img src="images/gestionnaire.png" alt="gestionnaire de tache">
         </div>
         <div>
             <h4>Gestionnaire de Tâches</h4>
-            <p>Application web pour organiser ses projets quotidients avec stockage local</p>
-            <a href="">Python</a>
-            <a href="">Flask</a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <h5>code</h5>
-            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <h5>demo</h5>
+            <p>Application web pour organiser ses projets quotidiens avec stockage local</p>
+            <nav>
+                <ul>
+                    <a href="">Python</a>
+                    <a href="">Flask</a>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <a href=""><i class="fa-brands fa-github"></i><h5>Code</h5></a>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i><h5>Démo</h5></a>
+                </ul>
+            </nav>
         </div>
     </section>
+
+    <!-- Projet 3 -->
     <section>
         <div>
-            <img src="images/blog.png" alt="blog personnel" height=120px>
+            <img src="images/blog.png" alt="blog personnel">
         </div>
         <div>
             <h4>Blog Personnel</h4>
             <p>Projet en cours de migration vers Laravel pour apprendre le backend</p>
-            <a href="">PHP</a>
-            <a href="">Laravel</a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <h5>code</h5>
-            <a href=""><i class="fa-solid fa-clock"></i></a>
-            <h5>Bientôt</h5>
+            <nav>
+                <ul>
+                    <a href="">PHP</a>
+                    <a href="">Laravel</a>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <a href=""><i class="fa-brands fa-github"></i><h5>Code</h5></a>
+                    <a href=""><i class="fa-solid fa-clock"></i><h5>Bientôt</h5></a>
+                </ul>
+            </nav>
         </div>
     </section>
+
+    <!-- Projet 4 -->
     <section>
         <div>
-            <img src="images/dashboard.png" alt="Dashboard d'Analyse" height=120px>
+            <img src="images/dashboard.png" alt="Dashboard d'Analyse">
         </div>
         <div>
             <h4>Dashboard d'Analyse</h4>
             <p>Visualisation de données dynamiques avec Python et la bibliothèque Matplotlib</p>
-            <a href="">Python</a>
-            <a href="">Data</a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <h5>code</h5>
-            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <h5>demo</h5>
+            <nav>
+                <ul>
+                    <a href="">Python</a>
+                    <a href="">Data</a>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <a href=""><i class="fa-brands fa-github"></i><h5>Code</h5></a>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i><h5>Démo</h5></a>
+                </ul>
+            </nav>
         </div>
     </section>
+
+    <!-- Projet 5 -->
     <section>
         <div>
-            <img src="images/météo.png" alt="Application Météo" height=120px>
+            <img src="images/météo.png" alt="Application Météo">
         </div>
         <div>
             <h4>Application Météo</h4>
             <p>Une Application utilisant API en temps réel pour afficher la météo mondiale</p>
-            <a href="">JavaScript</a>
-            <a href="">API</a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <h5>code</h5>
-            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <h5>demo</h5>
+            <nav>
+                <ul>
+                    <a href="">JavaScript</a>
+                    <a href="">API</a>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <a href=""><i class="fa-brands fa-github"></i><h5>Code</h5></a>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i><h5>Démo</h5></a>
+                </ul>
+            </nav>
         </div>
     </section>
+
+    <!-- Projet 6 -->
     <section>
         <div>
-            <img src="images/mobile.png" alt="Maquette Mobile UI" height=120px>
+            <img src="images/mobile.png" alt="Maquette Mobile UI">
         </div>
         <div>
             <h4>Maquette Mobile UI</h4>
             <p>Conception d'une interface utilisateur moderne pour une application de fitness</p>
-            <a href="">Figma</a>
-            <a href="">Design</a>
-            <a href=""><i class="fa-brands fa-figma"></i></a>
-            <h5>Design</h5>
-            <a href=""><i class="fa-solid fa-eye"></i></a>
-            <h5>Aperçu</h5>
+            <nav>
+                <ul>
+                    <a href="">Figma</a>
+                    <a href="">Design</a>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <a href="">
+                        <i class="fa-brands fa-figma"></i>
+                        <h5>Design</h5>
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-eye"></i>
+                        <h5>Aperçu</h5>
+                    </a>
+                </ul>
+            </nav>
         </div>
     </section>
    </main>
+
       <footer>
         <section>
             <div>
-                <p>©2026 nday. Tous droits réservés</p><!-- pour le symbole de copy right je fais &copy ca donne copyright-->
-                <!--cdnjs.com puis font awesome puis premier lien on click et on copie la premiere ligne qu on met en dessous de la partie titre dans mon code une fois a la plate forme font awesome on click le lien https fontawesome au dessus une fois apres on aura qu a ecrire le nom de chaque logo clicker puis copier son lien-->
+                <p>©2026 nday. Tous droits réservés</p>
                 <a href=""><i class="fa-brands fa-github"></i></a>
                 <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 <a href=""><i class="fa-brands fa-x-twitter"></i></a>
@@ -135,4 +203,4 @@
         </section>
       </footer>
 </body>
-</html> 
+</html>
