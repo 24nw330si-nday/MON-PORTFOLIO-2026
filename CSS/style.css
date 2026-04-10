@@ -160,6 +160,12 @@ section h2::after {
 }
 
 
+.apropos p{
+    margin-bottom: 2rem;
+    color:var(--gris-fonce);
+    font-size: 1.3rem;
+    
+
 }
 
 .competences table {
@@ -171,6 +177,8 @@ section h2::after {
     border-radius: 10px;
     overflow: hidden;
     text-align: left;
+    color:var(--gris-fonce);
+    font-size: 1.3rem;
 }
 
 .competences table th, .competences table td {
@@ -211,6 +219,8 @@ footer {
     background-color: var(--violet-doux);
     padding: 3rem 0;
     text-align: center;
+    color:var(--gris-fonce);
+    font-size: 1.3rem;
 }
 
 footer p {
@@ -400,6 +410,11 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+  
+}.realisation p {
+     margin-bottom: 2rem;
+    color:var(--gris-fonce);
+    font-size: 1.3rem;
 }
 
 /* 2. Titre "Mes Réalisations" */
@@ -439,14 +454,14 @@ footer a:hover {
 
 .realisation h4 {
     color: var(--violet-doux);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
 }
 
 .realisation p {
     color: var(--gris-fonce);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
 }
@@ -465,7 +480,7 @@ footer a:hover {
     color: var(--violet-doux);
     padding: 4px 10px;
     border-radius: 4px;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -480,6 +495,7 @@ footer a:hover {
     justify-content: space-between;
     list-style: none;
     padding: 0;
+   
 }
 
 .realisation section div:nth-child(3) ul a {
@@ -496,12 +512,12 @@ footer a:hover {
 }
 
 .realisation section div:nth-child(3) ul a i {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .realisation section div:nth-child(3) ul a h5 {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
